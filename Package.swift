@@ -10,8 +10,8 @@ let package = Package(
         ],
         products: [
             .library(
-                name: "LipaLightningLib",
-                targets: ["LipaLightningLib"]),
+                name: "LipaLightningLibMock",
+                targets: ["LipaLightningLibMock"]),
         ],
         targets: [
             .binaryTarget(
