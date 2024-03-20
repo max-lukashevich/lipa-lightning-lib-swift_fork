@@ -21,6 +21,6 @@ let package = Package(
             .target(
                     name: "LipaLightningLib",
                     dependencies: ["lipalightninglibFFI"]),
-                    path: "Sources/LipaLightningLibMock"
+                    path: "Source/LipaLightningLibMock"
         ]
 )
