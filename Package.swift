@@ -3,6 +3,7 @@
 
 import PackageDescription
 import Foundation
+
 let package = Package(
         name: "LipaLightningLib",
         platforms: [
@@ -10,8 +11,8 @@ let package = Package(
         ],
         products: [
             .library(
-                name: "LipaLightningLibMock",
-                targets: ["LipaLightningLibMock"]),
+                name: "LipaLightningLib",
+                targets: ["LipaLightningLib"]),
         ],
         targets: [
             .binaryTarget(
@@ -19,7 +20,7 @@ let package = Package(
             url: "https://github.com/getlipa/lipa-lightning-lib-swift/releases/download/v0.41.6-beta/lipalightninglibFFI.xcframework.zip",
             checksum: "c982b5063781c7208058a52eb3facac82e680f6eaf0afb6795bbba46db1c2db6"),
             .target(
-                    name: "LipaLightningLibMock",
+                    name: "LipaLightningLib",
                     dependencies: ["lipalightninglibFFI"],
                     path: "Source/LipaLightningLib"),
         ]
